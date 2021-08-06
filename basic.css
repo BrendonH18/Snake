@@ -1,5 +1,22 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.background {
+  background-image: 'map.jpg';
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #gameCanvas {
 position: absolute;
-left: 50px;
-top: 50px
+left: 365px;
+top: 135px
+}
+
+.invisible {
+  visibility: visible;
 }

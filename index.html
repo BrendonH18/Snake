@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  
 <head>
   <link rel="stylesheet" href="basic.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Snake!</title>
 </head>
 <body>
-  
+  <div id="game-container">
+    <header>Marauder's Map</header>
+    <p>Find the Treasure - Don't Get Caught!</p>
+    <canvas id="gameCanvas" width="1250" height="1250"></canvas>
+    <div class="background"></div>
+    <label for="wallColor">Wall Color:</label>
+    <select name="wallColor" id="wall" class="color">
+      <option value="Gray">Gray</option>
+      <option value="Black">Black</option>
+    </select>
+  </div>
+  <img id="backgroun" src="map.jpg">
 </body>
+
 <script src="script.js"></script>
 </html>
