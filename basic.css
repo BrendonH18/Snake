@@ -13,8 +13,8 @@ body, html {
 
 #gameCanvas {
 position: absolute;
-left: 365px;
-top: 135px
+left: 355px;
+top: 35px
 }
 
 .invisible {
