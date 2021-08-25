@@ -3,20 +3,8 @@ body, html {
   margin: 0;
 }
 
-.background {
-  background-image: 'map.jpg';
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #gameCanvas {
 position: absolute;
 left: 355px;
 top: 35px
-}
-
-.invisible {
-  visibility: visible;
 }
