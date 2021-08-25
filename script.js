@@ -47,7 +47,6 @@ document.addEventListener('keydown', function(event) {
 const Game = {
   blockSize : 55,
   framesPerSecond : 7,
-  initialSnakeSize: 4,
   isPause: false,
   isSnakeCaughtInWall: false,
   isFinale: false,
@@ -93,7 +92,6 @@ const Game = {
     Apple.move(collisionList);
     Game.score += 1
     if (Game.score % 2 === 0) Game.level[0] += 1;
-    if (Game.score === 16) Game.finale_DecendStaircase();
     if (Game.score === 17) Game.finale_AscendStaircase();
     if (Game.score === 18) Game.finale_CloseStaircase();
   },
@@ -257,7 +255,7 @@ const Game = {
         canvasContext.drawImage(image, coordinateList[i][0] * Game.blockSize, coordinateList[i][1] * Game.blockSize , Game.blockSize, Game.blockSize)
       }
     }
-  },
+  }
 }
 
 const Apple = {
@@ -478,7 +476,7 @@ const Wall = {
 const Boss = {
   location: [13,6],
   wallDetector: [],
-  corner: [4, null], // [corner, orientation from start]
+  corner: [4, null], // [corner, orientation relative to 'location']
 
   main() {
     this.move()
