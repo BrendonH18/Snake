@@ -106,11 +106,9 @@ const Game = {
   incrementLevel_Walls() {
     switch (this.level[0]) {
       case 2:
-      // case 11:
         Wall.interior = Wall.interior.concat(Wall.level2walls);
         break;
       case 3:
-      // case 12:
         Wall.interior = Wall.interior.concat(Wall.level3walls);
         break;
       case 4:
@@ -122,11 +120,9 @@ const Game = {
         Wall.interior = Wall.interior.concat(Wall.level5walls);
         break;
       case 6:
-      // case 15:
         Wall.interior = Wall.interior.concat(Wall.level6walls);
         break;
       case 7:
-      // case 16:
         Wall.interior = Wall.interior.concat(Wall.level7walls);
         break;
       case 8:
