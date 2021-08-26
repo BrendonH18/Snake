@@ -54,8 +54,6 @@ const Game = {
   isReset: false,
   level: [1,1], // [before, after]
   score: 0,
-  scoreTexture : 'black',
-  scoreFont : '100px Ariel Bold',
 
   collisionTest () {
     let collisionList = Wall.boarder.concat(Wall.interior, Snake.body.slice(1))
@@ -238,8 +236,8 @@ const Game = {
   },
 
   renderScore() {
-    canvasContext.fillStyle = this.scoreTexture;
-    canvasContext.font = this.scoreFont;
+    canvasContext.fillStyle = 'black';
+    canvasContext.font = '100px Ariel Bold';
     canvasContext.fillText(`Score: ${this.score}`, this.blockSize * (MAX_X - 8), this.blockSize * 2)
   },
 
