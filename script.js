@@ -31,8 +31,8 @@ document.addEventListener('keydown', function(event) {
     "ArrowDown" : ["down", 'up']
   };
   const commands_utilities = {
-  "Escape" : "Pause",
-  "Enter" : "Reset"
+    "Escape" : "Pause",
+    "Enter" : "Reset"
   };
   if (commands_directions[event.key] !== undefined && commands_directions[event.key][0] !== Snake.oppositeDirection) {
     Snake.direction = commands_directions[event.key][0];
